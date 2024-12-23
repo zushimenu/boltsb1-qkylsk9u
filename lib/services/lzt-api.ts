@@ -7,7 +7,7 @@ import { getRandomPastTimestamp } from '../utils/date-helpers';
 export async function fetchWithAuth(endpoint: string) {
   const response = await fetch(`${API_CONFIG.BASE_URL}${endpoint}`, {
     headers: {
-      'Authorization': `Bearer ${process.env.LZT_API_TOKEN}`,
+      'Authorization': `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJzdWIiOjgwODg5NDEsImlzcyI6Imx6dCIsImV4cCI6MCwiaWF0IjoxNzMzODYwNTc3LCJqdGkiOjY5Nzk4NCwic2NvcGUiOiJiYXNpYyByZWFkIHBvc3QgY29udmVyc2F0ZSBtYXJrZXQifQ.C5QODgTNCwhHTNsE8tOxBaqeC7PWO-jjCQYpWm5Om9T-ghqj_zxfcP-h7W3deTk9gqhmjnTc9FOs2SWfONZEZa4hswZE2ZbrpjdWwStEi07p6cIyQjyhSvN_wVAxLf1folJrV_Em9LlkshPTwFA3QB0yNA3dIfMTfdfwgUDTn1c`,
       'Accept': 'application/json'
     }
   });
